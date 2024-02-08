@@ -18,12 +18,13 @@ client.on('messageCreate',(message) => {
         return
     }
 
-    if(message.content === "test"){
+    /*if(message.content === "test"){
 
         message.reply("Voici un test bien réussi !")
-    }
-    const xString = "x.com";
-    const vxTwitterString = "vxtwitter.com";
+    }*/
+
+    const xString = "https://x.com";
+    const vxTwitterString = "https://vxtwitter.com";
     let fixedTwitterString = "";
     if(message.content.includes(xString)){
         fixedTwitterString = message.content.replace(xString, vxTwitterString);
